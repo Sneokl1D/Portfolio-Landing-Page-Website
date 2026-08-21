@@ -40,8 +40,6 @@ This project was created as a portfolio/demo website and can be customized for d
 
 > **"A practical multi-page portfolio website built and customized with HTML, CSS and JavaScript."**
 
-If you deploy it with **GitHub Pages**, your README can have:
-
 ## 🌐 Live Demo
 
 [View Live Website](https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/)
