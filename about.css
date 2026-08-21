@@ -1,0 +1,1302 @@
+/* =====================================================
+   GLOBAL
+   ===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(241, 241, 241);
+
+  overflow-x: hidden;
+}
+
+
+/* =====================================================
+   HEADER / NAVBAR
+   ===================================================== */
+
+.header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 35px 12%;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 25px;
+
+  color: white;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: orangered;
+
+  text-shadow:
+    0 0 25px orangered,
+    0 0 50px orangered;
+
+  transform: scale(1.1);
+}
+
+span {
+  color: orangered;
+}
+
+.navbar a {
+  font-size: 18px;
+
+  color: white;
+
+  font-weight: 500;
+
+  margin: 0 20px;
+
+  border-bottom: 3px solid transparent;
+
+  transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: orangered;
+
+  border-bottom: 2px solid orangered;
+}
+
+.contact {
+  padding: 10px 28px;
+
+  background-color: white;
+
+  color: black;
+
+  border: 2px solid transparent;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+
+  letter-spacing: 1px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+
+  white-space: nowrap;
+}
+
+.contact:hover {
+  background-color: orangered;
+
+  box-shadow: 0 0 25px orangered;
+
+  color: white;
+}
+
+
+/* =====================================================
+   ABOUT HERO
+   ===================================================== */
+
+.about-hero {
+  width: 100%;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7em;
+
+  padding: 160px 12% 60px;
+
+  background: rgb(241, 241, 241);
+}
+
+.about-hero-img {
+  flex-shrink: 0;
+}
+
+.about-hero-img img {
+  width: 420px;
+
+  max-width: 100%;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 25px orangered,
+    0 0 50px orangered;
+}
+
+.about-hero-content {
+  max-width: 700px;
+}
+
+.about-hero-content h3 {
+  font-size: 32px;
+}
+
+.about-hero-content h1 {
+  font-size: 48px;
+
+  line-height: 1.25;
+
+  margin: 8px 0 20px;
+}
+
+.about-hero-content p {
+  font-size: 17px;
+
+  color: #333;
+
+  margin-bottom: 30px;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   HERO BUTTONS
+   ===================================================== */
+
+.btn-box {
+  display: flex;
+
+  gap: 1.5em;
+
+  flex-wrap: wrap;
+}
+
+.btn-1,
+.btn-2 {
+  display: inline-block;
+
+  padding: 15px 28px;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+
+  letter-spacing: 1px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+
+  cursor: pointer;
+
+  text-align: center;
+}
+
+.btn-1 {
+  background-color: black;
+
+  color: white;
+
+  border: 2px solid transparent;
+}
+
+.btn-1:hover {
+  background-color: white;
+
+  color: black;
+
+  border: 2px solid black;
+}
+
+.btn-2 {
+  background-color: orangered;
+
+  color: white;
+
+  border: 2px solid black;
+}
+
+.btn-2:hover {
+  background-color: white;
+
+  color: orangered;
+}
+
+
+/* =====================================================
+   STATS
+   ===================================================== */
+
+.stats {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  gap: 6em;
+
+  padding: 60px 8%;
+
+  background: black;
+}
+
+.stat {
+  min-width: 120px;
+}
+
+.stat h2 {
+  font-size: 40px;
+
+  color: orangered;
+
+  text-shadow: 0 0 20px orangered;
+}
+
+.stat p {
+  color: white;
+
+  font-size: 15px;
+
+  margin-top: 8px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   SKILLS
+   ===================================================== */
+
+.skills {
+  padding: 100px 12%;
+}
+
+.skills .heading {
+  text-align: center;
+
+  font-size: 36px;
+
+  margin-bottom: 60px;
+}
+
+.skills-grid {
+  width: 100%;
+
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 28px;
+}
+
+.skill-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 15px;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+
+.bar {
+  width: 100%;
+
+  height: 10px;
+
+  background: rgb(224, 224, 224);
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+
+  background-color: orangered;
+
+  border-radius: 10px;
+}
+
+
+/* =====================================================
+   ABOUT CTA
+   ===================================================== */
+
+.about-cta {
+  text-align: center;
+
+  background: black;
+
+  padding: 80px 8%;
+}
+
+.about-cta h2 {
+  color: white;
+
+  font-size: 32px;
+
+  margin-bottom: 14px;
+}
+
+.about-cta p {
+  color: rgb(200, 200, 200);
+
+  font-size: 16px;
+
+  margin-bottom: 28px;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   SCROLLBAR
+   ===================================================== */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: orangered;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.6);
+
+  width: 50px;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
+  position: relative !important;
+
+  bottom: 0 !important;
+
+  width: 100% !important;
+
+  padding: 40px 0 !important;
+
+  background-color: black !important;
+}
+
+.footer .social {
+  text-align: center !important;
+
+  padding-bottom: 25px !important;
+
+  color: white !important;
+}
+
+.footer .social a {
+  font-size: 24px !important;
+
+  color: white !important;
+
+  border: 2px solid orangered !important;
+
+  width: 40px !important;
+
+  height: 40px !important;
+
+  line-height: 38px !important;
+
+  display: inline-block !important;
+
+  text-align: center !important;
+
+  border-radius: 50% !important;
+
+  margin: 0 8px !important;
+
+  box-shadow:
+    inset 0 0 10px orangered,
+    0 0 10px orangered !important;
+
+  transition: 0.3s ease !important;
+}
+
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-10px) !important;
+
+  color: orangered !important;
+
+  border: 2px solid orangered !important;
+}
+
+.footer ul {
+  margin-top: 0 !important;
+
+  padding: 0 !important;
+
+  font-size: 18px !important;
+
+  line-height: 1.6 !important;
+
+  margin-bottom: 0 !important;
+
+  text-align: center !important;
+}
+
+.footer ul li {
+  color: white !important;
+
+  border-bottom: 3px solid transparent !important;
+
+  transition: 0.3s ease !important;
+
+  display: inline-block !important;
+
+  padding: 0 15px !important;
+}
+
+.footer ul li a:hover {
+  border-bottom: 3px solid orangered !important;
+}
+
+.footer .copyright {
+  margin-top: 15px !important;
+
+  text-align: center !important;
+
+  font-size: 12px !important;
+
+  color: white !important;
+}
+
+.list a {
+  color: white !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE — TABLETS & SMALL LAPTOPS (≤ 900px)
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+  /* ---------- Header ---------- */
+
+  .header {
+    padding: 25px 5%;
+  }
+
+  .navbar a {
+    font-size: 16px;
+
+    margin: 0 10px;
+  }
+
+  .contact {
+    padding: 9px 20px;
+
+    font-size: 14px;
+  }
+
+
+  /* ---------- About Hero ---------- */
+
+  .about-hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 2.5em;
+
+    padding: 150px 8% 60px;
+  }
+
+  .about-hero-img img {
+    width: 280px;
+  }
+
+  .about-hero-content {
+    max-width: 700px;
+  }
+
+  .about-hero-content h3 {
+    font-size: 27px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .about-hero-content p {
+    font-size: 16px;
+  }
+
+  .btn-box {
+    justify-content: center;
+  }
+
+
+  /* ---------- Stats ---------- */
+
+  .stats {
+    flex-wrap: wrap;
+
+    gap: 2.5em;
+  }
+
+
+  /* ---------- Skills ---------- */
+
+  .skills {
+    padding: 80px 8%;
+  }
+
+  .skills .heading {
+    font-size: 30px;
+
+    margin-bottom: 45px;
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVE — SMALL TABLETS / LARGE PHONES (≤ 700px)
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+  /* ---------- Header ---------- */
+
+  .header {
+    padding: 20px 6%;
+
+    flex-wrap: wrap;
+
+    row-gap: 12px;
+  }
+
+  .navbar {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    margin: 0 9px;
+
+    font-size: 15px;
+  }
+
+
+  /* ---------- About Hero ---------- */
+
+  .about-hero {
+    padding: 175px 6% 60px;
+
+    gap: 2em;
+  }
+
+  .about-hero-img img {
+    width: 250px;
+  }
+
+  .about-hero-content h3 {
+    font-size: 25px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 34px;
+
+    line-height: 1.2;
+  }
+
+  .about-hero-content p {
+    font-size: 15px;
+
+    line-height: 1.65;
+
+    margin-bottom: 25px;
+  }
+
+
+  /* ---------- Buttons ---------- */
+
+  .btn-box {
+    gap: 12px;
+  }
+
+  .btn-1,
+  .btn-2 {
+    padding: 13px 22px;
+
+    font-size: 14px;
+  }
+
+
+  /* ---------- Stats ---------- */
+
+  .stats {
+    padding: 50px 6%;
+
+    gap: 30px;
+  }
+
+  .stat {
+    min-width: 100px;
+  }
+
+  .stat h2 {
+    font-size: 34px;
+  }
+
+  .stat p {
+    font-size: 13px;
+  }
+
+
+  /* ---------- Skills ---------- */
+
+  .skills {
+    padding: 70px 6%;
+  }
+
+  .skills .heading {
+    font-size: 28px;
+
+    margin-bottom: 40px;
+  }
+
+  .skills-grid {
+    gap: 24px;
+  }
+
+  .skill-top {
+    font-size: 14px;
+  }
+
+
+  /* ---------- CTA ---------- */
+
+  .about-cta {
+    padding: 65px 6%;
+  }
+
+  .about-cta h2 {
+    font-size: 27px;
+  }
+
+  .about-cta p {
+    font-size: 14px;
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVE — PHONES (≤ 480px)
+   iPhone SE / iPhone 12 / iPhone 13 / Android
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+  /* ---------- Header ---------- */
+
+  .header {
+    padding: 14px 16px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    row-gap: 9px;
+  }
+
+  .logo {
+    width: auto;
+
+    font-size: 21px;
+  }
+
+  /*
+     Contact Me stays visible on mobile.
+  */
+
+  .contact {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 8px 14px;
+
+    font-size: 13px;
+
+    letter-spacing: 0.5px;
+
+    border-radius: 7px;
+
+    white-space: nowrap;
+  }
+
+  .navbar {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 4px;
+  }
+
+  .navbar a {
+    font-size: 13px;
+
+    margin: 2px 6px;
+
+    padding: 2px 3px;
+  }
+
+
+  /* ---------- About Hero ---------- */
+
+  .about-hero {
+    min-height: auto;
+
+    padding: 165px 16px 60px;
+
+    gap: 2em;
+  }
+
+  .about-hero-img img {
+    width: 220px;
+
+    box-shadow:
+      0 0 20px orangered,
+      0 0 40px orangered;
+  }
+
+  .about-hero-content {
+    width: 100%;
+  }
+
+  .about-hero-content h3 {
+    font-size: 21px;
+
+    margin-bottom: 5px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 29px;
+
+    line-height: 1.2;
+
+    margin: 6px 0 16px;
+  }
+
+  .about-hero-content p {
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    margin-bottom: 24px;
+  }
+
+
+  /* ---------- Buttons ---------- */
+
+  .btn-box {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .btn-1,
+  .btn-2 {
+    width: 100%;
+
+    padding: 12px 20px;
+
+    font-size: 14px;
+  }
+
+
+  /* ---------- Stats ---------- */
+
+  .stats {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px 15px;
+
+    padding: 45px 16px;
+  }
+
+  .stat {
+    min-width: 0;
+  }
+
+  .stat h2 {
+    font-size: 31px;
+  }
+
+  .stat p {
+    font-size: 12px;
+
+    margin-top: 5px;
+  }
+
+
+  /* ---------- Skills ---------- */
+
+  .skills {
+    padding: 65px 16px;
+  }
+
+  .skills .heading {
+    font-size: 26px;
+
+    margin-bottom: 38px;
+  }
+
+  .skills-grid {
+    gap: 22px;
+  }
+
+  .skill-top {
+    font-size: 13px;
+
+    margin-bottom: 8px;
+  }
+
+  .bar {
+    height: 8px;
+  }
+
+
+  /* ---------- CTA ---------- */
+
+  .about-cta {
+    padding: 55px 16px;
+  }
+
+  .about-cta h2 {
+    font-size: 23px;
+
+    line-height: 1.3;
+  }
+
+  .about-cta p {
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 24px;
+  }
+
+
+  /* ---------- Footer ---------- */
+
+  .footer {
+    padding: 32px 12px !important;
+  }
+
+  .footer .social {
+    padding-bottom: 20px !important;
+  }
+
+  .footer .social a {
+    width: 34px !important;
+
+    height: 34px !important;
+
+    line-height: 30px !important;
+
+    font-size: 18px !important;
+
+    margin: 0 4px !important;
+  }
+
+  .footer ul {
+    font-size: 12px !important;
+
+    line-height: 1.8 !important;
+  }
+
+  .footer ul li {
+    padding: 0 8px !important;
+
+    font-size: 14px !important;
+  }
+
+  .footer .copyright {
+    font-size: 10px !important;
+
+    line-height: 1.5 !important;
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVE — VERY SMALL PHONES (≤ 375px)
+   iPhone SE / 320–375px
+   ===================================================== */
+
+@media (max-width: 375px) {
+
+  /* ---------- Header ---------- */
+
+  .header {
+    padding: 12px 12px;
+
+    row-gap: 8px;
+  }
+
+  .logo {
+    font-size: 19px;
+  }
+
+  .contact {
+    padding: 7px 11px;
+
+    font-size: 12px;
+  }
+
+  .navbar {
+    gap: 2px;
+  }
+
+  .navbar a {
+    font-size: 11px;
+
+    margin: 2px 4px;
+
+    padding: 2px;
+  }
+
+
+  /* ---------- Hero ---------- */
+
+  .about-hero {
+    padding: 150px 14px 50px;
+
+    gap: 1.8em;
+  }
+
+  .about-hero-img img {
+    width: 190px;
+  }
+
+  .about-hero-content h3 {
+    font-size: 19px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 26px;
+  }
+
+  .about-hero-content p {
+    font-size: 13px;
+
+    line-height: 1.6;
+  }
+
+
+  /* ---------- Buttons ---------- */
+
+  .btn-1,
+  .btn-2 {
+    padding: 11px 18px;
+
+    font-size: 13px;
+  }
+
+
+  /* ---------- Stats ---------- */
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px 10px;
+
+    padding: 40px 12px;
+  }
+
+  .stat h2 {
+    font-size: 28px;
+  }
+
+  .stat p {
+    font-size: 11px;
+  }
+
+
+  /* ---------- Skills ---------- */
+
+  .skills {
+    padding: 55px 14px;
+  }
+
+  .skills .heading {
+    font-size: 24px;
+
+    margin-bottom: 32px;
+  }
+
+  .skill-top {
+    font-size: 12px;
+  }
+
+  .bar {
+    height: 7px;
+  }
+
+
+  /* ---------- CTA ---------- */
+
+  .about-cta {
+    padding: 48px 14px;
+  }
+
+  .about-cta h2 {
+    font-size: 21px;
+  }
+
+  .about-cta p {
+    font-size: 12px;
+  }
+
+
+  /* ---------- Footer ---------- */
+
+  .footer {
+    padding: 28px 8px !important;
+  }
+
+  .footer .social a {
+    width: 32px !important;
+
+    height: 32px !important;
+
+    line-height: 28px !important;
+
+    font-size: 17px !important;
+
+    margin: 0 3px !important;
+  }
+
+  .footer ul li {
+    padding: 0 5px !important;
+
+    font-size: 11px !important;
+  }
+
+  .footer .copyright {
+    font-size: 9px !important;
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVE — VERY SMALL DEVICES (≤ 320px)
+   ===================================================== */
+
+@media (max-width: 320px) {
+
+  .header {
+    padding-left: 8px;
+
+    padding-right: 8px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .contact {
+    padding: 6px 9px;
+
+    font-size: 11px;
+  }
+
+  .navbar {
+    gap: 0;
+  }
+
+  .navbar a {
+    font-size: 10px;
+
+    margin: 2px 3px;
+  }
+
+
+  /* ---------- Hero ---------- */
+
+  .about-hero {
+    padding-left: 12px;
+
+    padding-right: 12px;
+  }
+
+  .about-hero-img img {
+    width: 170px;
+  }
+
+  .about-hero-content h3 {
+    font-size: 18px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 24px;
+  }
+
+  .about-hero-content p {
+    font-size: 12px;
+  }
+
+
+  /* ---------- Buttons ---------- */
+
+  .btn-1,
+  .btn-2 {
+    padding: 10px 15px;
+
+    font-size: 12px;
+  }
+
+
+  /* ---------- Stats ---------- */
+
+  .stats {
+    padding-left: 10px;
+
+    padding-right: 10px;
+  }
+
+  .stat h2 {
+    font-size: 25px;
+  }
+
+  .stat p {
+    font-size: 10px;
+  }
+
+
+  /* ---------- Skills ---------- */
+
+  .skills {
+    padding-left: 12px;
+
+    padding-right: 12px;
+  }
+
+  .skills .heading {
+    font-size: 22px;
+  }
+
+  .skill-top {
+    font-size: 11px;
+  }
+
+
+  /* ---------- CTA ---------- */
+
+  .about-cta {
+    padding-left: 12px;
+
+    padding-right: 12px;
+  }
+
+  .about-cta h2 {
+    font-size: 20px;
+  }
+
+
+  /* ---------- Footer ---------- */
+
+  .footer ul li {
+    padding: 0 3px !important;
+
+    font-size: 10px !important;
+  }
+}
+
+
+/* =====================================================
+   ACCESSIBILITY — REDUCED MOTION
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .logo,
+  .navbar a,
+  .contact,
+  .btn-1,
+  .btn-2,
+  .footer .social a {
+    transition: none;
+  }
+}

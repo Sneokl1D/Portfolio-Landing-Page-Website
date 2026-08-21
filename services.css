@@ -1,0 +1,455 @@
+:root {
+  --paper: #f2f3ee;
+  --ink: #1b1f23;
+  --ink-soft: #5b6168;
+  --line: #d8dad2;
+  --accent: orangered;
+  --accent-soft: #ffe9e0;
+  --mono: "JetBrains Mono", "SF Mono", Consolas, monospace;
+  --serif: "Georgia", "Iowan Old Style", serif;
+  --sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 160px 24px 120px;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 12%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: orangered;
+  text-shadow:
+    0 0 25px orangered,
+    0 0 50px orangered;
+  transform: scale(1.1);
+}
+
+span {
+  color: orangered;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin: 0 20px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: orangered;
+  border-bottom: 2px solid orangered;
+}
+
+.contact {
+  padding: 10px 28px;
+  background-color: white;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.contact:hover {
+  background-color: orangered;
+  box-shadow: 0 0 25px orangered;
+  color: white;
+}
+
+/* ---------- Services: Start ---------- */
+
+.services-hero {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 64px;
+}
+
+.services-hero .eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: orangered;
+  margin-bottom: 14px;
+}
+
+.services-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+.services-hero p {
+  color: var(--ink-soft);
+  font-size: 16px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 80px;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 32px;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(255, 69, 0, 0.15);
+  border-color: orangered;
+}
+
+.icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: orangered;
+  box-shadow:
+    inset 0 0 10px rgba(255, 69, 0, 0.25),
+    0 0 10px rgba(255, 69, 0, 0.15);
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: var(--ink-soft);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.service-card ul {
+  margin-bottom: 22px;
+}
+
+.service-card ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--ink);
+  padding: 4px 0;
+}
+
+.service-card ul li i {
+  color: orangered;
+  font-size: 16px;
+}
+
+.service-card .price {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  color: orangered;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  width: 100%;
+}
+
+.services-cta {
+  text-align: center;
+  background: black;
+  border-radius: 16px;
+  padding: 56px 24px;
+  color: white;
+}
+
+.services-cta h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.services-cta p {
+  color: #cfcfcf;
+  margin-bottom: 26px;
+  font-size: 15px;
+}
+
+.services-cta .contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: orangered;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.services-cta .contact-btn:hover {
+  box-shadow: 0 0 25px orangered;
+  transform: scale(1.03);
+}
+
+/* ---------- Services: End ---------- */
+
+/* =====================================================
+   RESPONSIVE — tablets & small laptops (≤ 900px)
+   ===================================================== */
+@media (max-width: 900px) {
+  .wrap {
+    padding: 170px 20px 90px;
+  }
+  .services-grid {
+    gap: 22px;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — small tablets / large phones (≤ 700px)
+   ===================================================== */
+@media (max-width: 700px) {
+  .header {
+    padding: 20px 6%;
+    flex-wrap: wrap;
+    row-gap: 14px;
+  }
+  .navbar a {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+  .wrap {
+    padding: 190px 18px 80px;
+  }
+  .services-hero h1 {
+    font-size: 32px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — phones (≤ 480px, iPhone SE and similar)
+   ===================================================== */
+@media (max-width: 480px) {
+  .header {
+    padding: 16px 5%;
+  }
+  .logo {
+    font-size: 21px;
+  }
+  .navbar a {
+    font-size: 13px;
+    margin: 3px 6px;
+  }
+  .contact {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+
+  .wrap {
+    padding: 210px 16px 60px;
+  }
+
+  .services-hero {
+    margin-bottom: 40px;
+  }
+  .services-hero .eyebrow {
+    font-size: 12px;
+  }
+  .services-hero h1 {
+    font-size: 26px;
+  }
+  .services-hero p {
+    font-size: 14.5px;
+  }
+
+  .services-grid {
+    gap: 16px;
+    margin-bottom: 50px;
+  }
+
+  .service-card {
+    padding: 24px 20px;
+  }
+
+  .icon-circle {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .service-card h3 {
+    font-size: 17px;
+  }
+
+  .service-card p,
+  .service-card ul li {
+    font-size: 13.5px;
+  }
+
+  .services-cta {
+    padding: 40px 20px;
+    border-radius: 12px;
+  }
+
+  .services-cta h2 {
+    font-size: 21px;
+  }
+
+  .services-cta p {
+    font-size: 14px;
+  }
+
+  .services-cta .contact-btn {
+    padding: 11px 22px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  position: relative !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  padding: 40px 0 !important;
+  background-color: black !important;
+}
+
+.footer .social {
+  text-align: center !important;
+  padding-bottom: 25px !important;
+  color: white !important;
+}
+
+.footer .social a {
+  font-size: 24px !important;
+  color: white !important;
+  border: 2px solid orangered !important;
+  width: 40px !important;
+  height: 40px !important;
+  line-height: 38px !important;
+  display: inline-block !important;
+  text-align: center !important;
+  border-radius: 50% !important;
+  margin: 0 8px !important;
+  box-shadow:
+    inset 0 0 10px orangered,
+    0 0 10px orangered !important;
+  transition: 0.3s ease !important;
+}
+
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-10px) !important;
+  color: orangered !important;
+  border: 2px solid orangered !important;
+}
+
+.footer ul {
+  margin-top: 0 !important;
+  padding: 0 !important;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  margin-bottom: 0 !important;
+  text-align: center !important;
+}
+
+.footer ul li {
+  color: white !important;
+  border-bottom: 3px solid transparent !important;
+  transition: 0.3s ease !important;
+}
+
+.footer ul li a:hover {
+  border-bottom: 3px solid orangered !important;
+}
+
+.footer ul li {
+  display: inline-block !important;
+  padding: 0 15px !important;
+}
+
+.footer .copyright {
+  margin-top: 15px !important;
+  text-align: center !important;
+  font-size: 12px !important;
+  color: white !important;
+}
+
+.list a {
+  color: white !important;
+}
+
+@media (max-width: 480px) {
+  .footer ul li {
+    padding: 0 8px !important;
+    font-size: 10px4px !important;
+  }
+  .footer .social a {
+    width: 34px !important;
+    height: 34px !important;
+    line-height: 30px !important;
+    font-size: 18px !important;
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments | Monetz</title>
+    <link rel="stylesheet" href="experiments.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"> <span>Mon</span>etz</a>
+
+        <nav class="navbar">
+            <a href="index.html">Portfolio</a>
+            <a href="services.html">Services</a>
+            <a href="experiments.html" class="active">Experiments</a>
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+        </nav>
+
+        <a href="contact.html" class="contact">Contact Me</a>
+    </header>
+
+<!-- Start -->
+
+<section class="exp-hero">
+    <h3>Playground</h3>
+    <h1>Experiments & <span>Prototypes</span></h1>
+    <p>Small builds made for fun or to test an idea — not client work, just things I wanted to try. Some are rough on purpose.</p>
+</section>
+
+<section class="exp-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="game">Game Dev</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="script">Scripting</button>
+</section>
+
+<section class="exp-grid" id="expGrid">
+
+    <div class="exp-card" data-tag="game">
+        <div class="exp-thumb"><i class='bx bx-cube-alt'></i></div>
+        <span class="exp-tag">Game Dev</span>
+        <h3>Procedural Cave Generator</h3>
+        <p>A noise-based cave carving script for Minecraft Bedrock, generating natural-looking tunnels on world load.</p>
+        <a href="#" class="exp-link">View writeup <i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+
+    <div class="exp-card" data-tag="script">
+        <div class="exp-thumb"><i class='bx bx-terminal'></i></div>
+        <span class="exp-tag">Scripting</span>
+        <h3>Custom Furnace State Machine</h3>
+        <p>A small state-machine pattern for handling multi-stage furnace logic without messy nested conditionals.</p>
+        <a href="#" class="exp-link">View writeup <i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+
+    <div class="exp-card" data-tag="web">
+        <div class="exp-thumb"><i class='bx bx-palette'></i></div>
+        <span class="exp-tag">Web</span>
+        <h3>CSS-Only Particle Field</h3>
+        <p>An animated background made entirely with layered CSS gradients and keyframes — no canvas, no JS.</p>
+        <a href="#" class="exp-link">View demo <i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+
+    <div class="exp-card" data-tag="game">
+        <div class="exp-thumb"><i class='bx bx-joystick'></i></div>
+        <span class="exp-tag">Game Dev</span>
+        <h3>Recycler UI Prototype</h3>
+        <p>Early UI mockup for an item-recycling system before it became part of a full addon build.</p>
+        <a href="#" class="exp-link">View writeup <i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+
+    <div class="exp-card" data-tag="script">
+        <div class="exp-thumb"><i class='bx bx-code-curly'></i></div>
+        <span class="exp-tag">Scripting</span>
+        <h3>JS Deobfuscation Notes</h3>
+        <p>Working notes from manually untangling a minified script — patterns I look for and how I approach it.</p>
+        <a href="#" class="exp-link">View writeup <i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+
+    <div class="exp-card" data-tag="web">
+        <div class="exp-thumb"><i class='bx bx-loader-circle'></i></div>
+        <span class="exp-tag">Web</span>
+        <h3>Inventory Dashboard Sandbox</h3>
+        <p>A stripped-down PHP + MySQLi sandbox for testing stock-movement audit trail logic before rollout.</p>
+        <a href="#" class="exp-link">View demo <i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+
+</section>
+
+<p class="exp-empty" id="expEmpty">Nothing here yet in this category — check back soon.</p>
+
+<!-- End -->
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="YOUR-GITHUB"><i class="bx bxl-github"></i></a>
+            <a href="YOUR-LINKEDIN"><i class="bx bxl-linkedin-square"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="privacy.html">Privacy Policy</a>
+            </li>
+        </ul>
+
+        <p class="copyright">© 2023 Monetz | All Rights Reserved</p>
+    </footer>
+
+    <script src="experiments.js"></script>
+</body>
+</html>
