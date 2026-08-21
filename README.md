@@ -38,6 +38,14 @@ This project was created as a portfolio/demo website and can be customized for d
 
 ## 📂 Project Structure
 
+> **"A practical multi-page portfolio website built and customized with HTML, CSS and JavaScript."**
+
+If you deploy it with **GitHub Pages**, your README can have:
+
+## 🌐 Live Demo
+
+[View Live Website](https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/)
+
 ```text
 Personal-Portfolio/
 │
@@ -66,11 +74,3 @@ Personal-Portfolio/
 ├── contact.js
 │
 └── images/
-
-> **"A practical multi-page portfolio website built and customized with HTML, CSS and JavaScript."**
-
-If you deploy it with **GitHub Pages**, your README can have:
-
-## 🌐 Live Demo
-
-[View Live Website](https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/)
