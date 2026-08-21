@@ -66,3 +66,16 @@ Personal-Portfolio/
 ├── contact.js
 │
 └── images/
+
+> **"A practical multi-page portfolio website built and customized with HTML, CSS and JavaScript."**
+
+That's honest and still sounds professional.
+
+### Also add a live demo 🔥
+
+If you deploy it with **GitHub Pages**, your README can have:
+
+```markdown
+## 🌐 Live Demo
+
+[View Live Website](YOUR-GITHUB-PAGES-LINK)
