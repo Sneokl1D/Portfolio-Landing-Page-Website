@@ -42,7 +42,7 @@ This project was created as a portfolio/demo website and can be customized for d
 
 ## 🌐 Live Demo
 
-[View Live Website](https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/](https://sneokl1d.github.io/Portfolio-Landing-Page-Website/))
+[View Live Website](https://sneokl1d.github.io/Portfolio-Landing-Page-Website/)
 
 ```text
 Personal-Portfolio/
